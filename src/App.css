@@ -1,0 +1,34 @@
+#wraper { 
+  display: grid;
+  grid-template-areas: 
+    "header header"
+    "nav article"
+    "footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr;
+  grid-gap: 1em;
+  height: 100vh;
+  margin: 0;
+  }
+  header, footer, article, nav, div {
+    padding: 20px;
+    
+  }
+  #pageHeader {
+    grid-area: header;
+    background: gold;
+  }
+  #pageFooter {
+    grid-area: footer;
+    background: black;
+    color: gold;
+  }
+  #mainArticle { 
+    grid-area: article;
+    background: blue;      
+    }
+  #mainNav { 
+    grid-area: nav; 
+    background: green;
+    }
+  
